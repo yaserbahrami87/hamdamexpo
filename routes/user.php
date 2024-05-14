@@ -5,4 +5,9 @@ Route::get('/',function ()
     return view('user.index');
 })->name('home');
 
-Route::get('/competition',\App\Http\Livewire\User\Competitions::class)->name('competition.show');
+Route::namespace('\\App\\Http\\Livewire\\')->group(function()
+{
+    Route::get('/competition',User\Competitions::class)->name('competition.show');
+});
+
+
