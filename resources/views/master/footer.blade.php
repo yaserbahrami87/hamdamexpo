@@ -39,13 +39,14 @@
     </div>
     <div class="row">
         <div class="col-12 text-center">
-            <p>مالکیت حقوقی و معنوی این تارنما متعلق به موسسه آفرینش های هنری استان قدس رضوی می باشد</p>
+            <p>مالکیت حقوقی و معنوی این تارنما متعلق به موسسه موسسه توانبخشی همدم می باشد</p>
         </div>
     </div>
 </footer>
 
-<script src="/js/jquery.slim.min.js" ></script>
-<script src="/js/bootstrap.bundle.min.js" ></script>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.slim.min.js" ></script>
+<script src="/assets/js/bootstrap.bundle.min.js" ></script>
 
 <!--
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="d23eccc1-8bfc-4ee2-915d-3f1c6dc68a16";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>

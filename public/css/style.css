@@ -31,13 +31,13 @@ a:hover{
 
 body
 {
-    background-color: #1a1346;
+    background-color: #ffffff;
 }
 
 
 
 #main_home{
-    background-color: #1a1346;
+    background-color: #ffffff;
     height: 100vh;
     background-image: url("../images/background.png");
     background-repeat: no-repeat;

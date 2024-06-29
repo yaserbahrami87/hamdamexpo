@@ -43,17 +43,17 @@
                 <div class="collapse navbar-collapse" id="navbarVerticalContent">
                     <ul class="navbar-nav mr-auto p-0">
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="/farsi/home">خانه</a>
+                            <a class="nav-link text-dark" href="/">خانه</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-light" href="/call" >
+                            <a class="nav-link text-dark" href="/call" >
                                 فراخوان
                             </a>
 
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link  text-light" href="/gallery/{{$festival->festival}}" >
+                            <a class="nav-link  text-dark" href="/gallery/{{$festival->festival}}" >
                                 گالری
                             </a>
                             {{--
@@ -65,13 +65,13 @@
                             --}}
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-light" href="/pillars/{{$festival->festival}}" >
+                            <a class="nav-link text-dark" href="/pillars/{{$festival->festival}}" >
                                 ارکان جشنواره
                             </a>
                         </li>
                         @guest
                             <li class="nav-item active">
-                                <a class="nav-link text-light" href="/farsi/login">ورود / عضویت <span class="sr-only">(current)</span></a>
+                                <a class="nav-link text-dark" href="/login">ورود / عضویت <span class="sr-only">(current)</span></a>
                             </li>
                         @else
                             <li class="nav-item dropdown">
@@ -98,18 +98,18 @@
                             </li>
                         @endif
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="/panel/competiton/create">ارسال اثر</a>
+                            <a class="nav-link text-dark" href="/panel/competiton/create">ارسال اثر</a>
                         </li>
 
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-light" href="/farsi/news/{{$festival->festival_fa}}"   >
+                            <a class="nav-link text-dark" href="/farsi/news/{{$festival->festival_fa}}"   >
                                 اخبار
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link text-light" href="/farsi/contactUs/create_fa">تماس با ما</a>
+                            <a class="nav-link text-dark" href="/farsi/contactUs/create_fa">تماس با ما</a>
                         </li>
                     </ul>
                 </div>

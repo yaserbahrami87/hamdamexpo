@@ -31,10 +31,10 @@
                 <div class="col-12  mb-5" id="news">
                     <div class="news_item" >
                         @foreach($festival->pillars as $pillar)
-                            <div class="card border-0 bg-transparent p-3 text-light">
+                            <div class="card border-0 bg-transparent p-3 text-dark">
                                 <img src="/assets/images/pillars/{{'thumbnail_'.$pillar->image}}" class="card-img-top mb-3" alt="...">
                                 <div class="card-body p-0">
-                                    <a class="btn w-100 mb-3 text-light" data-toggle="collapse" href="#collapseExample{{$pillar->id}}" role="button" aria-expanded="false" aria-controls="collapseExample{{$pillar->id}}">
+                                    <a class="btn w-100 mb-3 text-dark" data-toggle="collapse" href="#collapseExample{{$pillar->id}}" role="button" aria-expanded="false" aria-controls="collapseExample{{$pillar->id}}">
                                         {{$pillar->fname.' '.$pillar->lname}}
                                     </a>
                                     <p class="position_slick_referee w-100 text-center">{{$pillar->position}}</p>
