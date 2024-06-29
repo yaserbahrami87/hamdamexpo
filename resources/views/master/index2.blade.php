@@ -34,7 +34,7 @@
 
             <nav class="col-12 navbar navbar-expand-lg navbar-light bg-transparent mb-5">
                 <a class="navbar-brand" href="/">
-                    <img src="/assets/images/{{$settings->where('setting','logo')->first()->value}}" class="img-fluid" />
+                    <img src="/images/{{$settings->where('setting','logo')->first()->value}}" class="img-fluid" />
                 </a>
 
                 <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarVerticalContent" aria-controls="navbarVerticalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,7 +76,7 @@
                         @else
                             <li class="nav-item dropdown">
 
-                                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
                                     {{Auth::user()->fname}}
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">

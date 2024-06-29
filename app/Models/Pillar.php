@@ -14,6 +14,6 @@ class Pillar extends Model
 
     public function festival()
     {
-        return $this->belongsTo('App\festival');
+        return $this->belongsTo(festival::class);
     }
 }

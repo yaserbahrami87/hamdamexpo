@@ -1,5 +1,5 @@
 @component('master.index2')
-        <div class="col-5 mx-auto text-right mb-5">
+        <div class="col-5 mx-auto   mb-5">
             <div class="card ">
                 <div class="card-header">فراموشی رمز عبور</div>
                 <div class="card-body">

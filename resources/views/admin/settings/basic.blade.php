@@ -1,17 +1,17 @@
-@extends('admin.master.index')
+@component('admin.master.index')
 
-@section('headerScript')
+@slot('headerScript')
     <link href="/admin/plugins/datatables/datatables.min.css" rel="stylesheet" />
-@endsection
+@endslot
 
-@section('content')
+
     <div class="col-12 col-md-6 mx-auto">
         <div class="card">
             <div class="card-header">
                 تنظیمات اصلی سایت
             </div>
             <div class="card-body">
-                <form method="post" action="/admin/setting/basic" enctype="multipart/form-data">
+                <form method="post" action="{{route('admin.setting.basic.store')}}" enctype="multipart/form-data">
                     {{csrf_field()}}
                     <div class="col-12">
 
@@ -41,9 +41,9 @@
         </div>
     </div>
 
-@endsection
 
-@section('footerScript')
+
+@slot('footerScript')
     <script src="/admin/plugins/datatables/datatables.min.js"></script>
 
     <script>
@@ -65,4 +65,7 @@
             });
         });
     </script>
-@endsection
+@endslot
+
+
+@endcomponent

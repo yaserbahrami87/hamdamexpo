@@ -1,5 +1,5 @@
 @component('master.index2')
-    <div class="col-md-6 mx-auto text-right mb-5">
+    <div class="col-md-6 mx-auto   mb-5">
         <div class="card">
         <div class="card-header">ثبت نام</div>
             <div class="card-body">
