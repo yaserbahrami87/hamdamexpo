@@ -3,7 +3,7 @@
         <div class="col-12 col-md-3">
             <div class="card" >
                 <div class="card-body">
-                    <form method="post" wire:submit.prevent="save">
+                    <form wire:submit.prevent="save">
                         <div class="form-group">
                             <label for="name">نام اثر:<span class="text-danger">*</span></label>
                             <input type="text" class="form-control" id="name" wire:model.lazy="name" >

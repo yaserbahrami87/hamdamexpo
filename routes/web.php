@@ -24,16 +24,25 @@ use Inertia\Inertia;
 //    ]);
 //});
 
-route::get('/',function()
-{
-    return view('index');
-});
+route::get('/',[\App\Http\Controllers\HomeController::class,'index']);
 
+
+//Call
+Route::get('/call',[\App\Http\Controllers\CallController::class,'show']);
+
+//Gallery
+Route::get('/gallery/{festival}',[\App\Http\Controllers\GalleryController::class,'show']);
+
+//pillars
+Route::get('/pillars/{festival}',[\App\Http\Controllers\PillarController::class,'show']);
 
 route::get('/news',function()
 {
     return view('news');
 })->name('news');
+
+
+
 
 
 route::get('/contact',function()
@@ -42,3 +51,18 @@ route::get('/contact',function()
 })->name('contact');
 
 require __DIR__.'/auth.php';
+
+
+Route::get('/migrate',function()
+{
+    Artisan::call('migrate');
+    return "Migration";
+});
+
+
+
+Route::get('/clear_cache',function()
+{
+    Artisan::call('cache:clear');
+    return "Clear cache";
+});

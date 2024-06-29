@@ -1,4 +1,5 @@
-@component('master.index')
+@component('master.index2',['settings'=>$settings])
+
 <section class ="owl-curve-green">
     <div class="gap no-gap">
         <img class="botm-shp shp-img" src="/assets/images/shp2-1.png" alt="shp2-1.png">
@@ -329,4 +330,5 @@
         </div>
     </div>
 </section>
+
 @endcomponent

@@ -2,7 +2,10 @@
 
 namespace App\Providers;
 
+use App\Models\festival;
+use App\Models\Setting;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +26,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $festival=festival::latest()
+                            ->first();
+        $settings=Setting::get();
+        View::share('festival',$festival);
+        View::share('settings',$settings);
     }
 }
