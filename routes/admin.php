@@ -28,12 +28,12 @@ Route::prefix('pillar')->group(function()
 
 
 //Settings
-Route::prefix('setting')->group(function ()
+Route::name('setting.')->prefix('setting')->group(function ()
 {
-    Route::get('/basic', [\App\Http\Controllers\Admin\SettingController::class,'basic_create'] )->name('setting.basic');
-    Route::post('/basic',[\App\Http\Controllers\Admin\SettingController::class,'basic'])->name('setting.basic.store');
-    Route::prefix('sliders_home')->group(function () {
-        Route::get('/', [\App\Http\Controllers\Admin\SettingController::class,'sliders_home']);
+    Route::get('/basic', [\App\Http\Controllers\Admin\SettingController::class,'basic_create'] )->name('basic');
+    Route::post('/basic',[\App\Http\Controllers\Admin\SettingController::class,'basic'])->name('basic.store');
+    Route::name('slider_home.')->prefix('sliders_home')->group(function () {
+        Route::get('/', [\App\Http\Controllers\Admin\SettingController::class,'sliders_home'])->name('index');
         Route::post('/',[\App\Http\Controllers\Admin\SettingController::class,'sliders_home_store']);
         Route::get('/{setting}/edit', [\App\Http\Controllers\Admin\SettingController::class,'sliders_home_edit']);
         Route::patch('/{setting}', [\App\Http\Controllers\Admin\SettingController::class,'sliders_home_update']);

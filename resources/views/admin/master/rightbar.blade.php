@@ -79,13 +79,36 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="{{route('admin.setting.basic')}}" class="nav-link">
-                            <i class="material-icons">settings</i>
+
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fa fa-wrench"></i>
                             <p>
-                                تنظیمات
+                                تنظیمات سایت
+                                <i class="fa fa-angle-left right"></i>
                             </p>
                         </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{route('admin.setting.basic')}}" class="nav-link">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>تنظیمات اصلی سایت</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{route('admin.setting.slider_home.index')}}" class="nav-link">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>پوسترهای صفحه اول</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/admin/setting/colleagues" class="nav-link">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>شرکا/همکاران</p>
+                                </a>
+                            </li>
+
+                        </ul>
                     </li>
                 </ul>
             </nav>

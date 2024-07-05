@@ -1,10 +1,10 @@
-@extends('admin.master.index')
+@component('admin.master.index')
 
-@section('headerScript')
+@slot('headerScript')
     <link href="/admin/plugins/datatables/datatables.min.css" rel="stylesheet" />
-@endsection
+@endslot
 
-@section('content')
+
     <div class="col-12">
         <div class="card">
             <div class="card-header">
@@ -77,9 +77,9 @@
     <div class="col-12 table-responsive">
 
     </div>
-@endsection
 
-@section('footerScript')
+
+@slot('footerScript')
     <script src="/admin/plugins/datatables/datatables.min.js"></script>
 
     <script>
@@ -101,4 +101,5 @@
             });
         });
     </script>
-@endsection
+@endslot
+@endcomponent
