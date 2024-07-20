@@ -22,15 +22,15 @@
         <div class="col-md-4 text-center">
 
 
-            <a href="https://www.aqart.ir/" target="_blank">
-                <img src="/images/logo_aq_gold.png" width="100px" />
+            <a href="https://hamdamart.com/" target="_blank">
+                <img src="/images/hamdam_.png" width="100px" />
             </a>
 
-            <a href="https://www.aqart.ir/Maktab-Rezvan.aspx" target="_blank">
-                <img src="/images/logo_maktab_gold.png" width="100px"  />
+            <a href="https://www.hamdam.org/" target="_blank">
+                <img src="/images/hamdam_store.png" width="100px"  />
             </a>
 
-            <a href="https://www.aqart.ir/" target="_blank">
+            <a href="#" target="_blank">
                 <img src="/images/دانشگاه-هنر-طلایی.png" width="100px" />
             </a>
         </div>
