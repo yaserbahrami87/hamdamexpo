@@ -103,7 +103,7 @@
 
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link text-dark" href="/farsi/news/{{$festival->festival_fa}}"   >
+                            <a class="nav-link text-dark" href="{{route('news.all')}}"   >
                                 اخبار
                             </a>
                         </li>

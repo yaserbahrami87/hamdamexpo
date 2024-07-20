@@ -13,6 +13,11 @@ class News extends Model
         'title','description','content','festival_id','user_id','date_fa','time_fa','image'
     ];
 
+    public function getRouteKeyName()
+    {
+        return 'title';
+    }
+
     public function festival()
     {
         return $this->belongsTo(festival::class);

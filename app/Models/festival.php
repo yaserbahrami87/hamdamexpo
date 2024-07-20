@@ -22,10 +22,10 @@ class festival extends Model
         return $this->hasMany(Pillar::class);
     }
 
-//    public function news()
-//    {
-//        return $this->hasMany('App\news');
-//    }
+    public function news()
+    {
+        return $this->hasMany(News::class);
+    }
 
     public function gallery()
     {

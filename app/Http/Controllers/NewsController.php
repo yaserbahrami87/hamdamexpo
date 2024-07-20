@@ -14,7 +14,7 @@ class NewsController extends Controller
      */
     public function index()
     {
-        //
+        return view('news');
     }
 
     /**
@@ -46,7 +46,9 @@ class NewsController extends Controller
      */
     public function show(News $news)
     {
-        //
+        return view('news_single')
+            ->with('news',$news);
+
     }
 
     /**

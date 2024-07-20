@@ -36,10 +36,8 @@ Route::get('/gallery/{festival}',[\App\Http\Controllers\GalleryController::class
 //pillars
 Route::get('/pillars/{festival}',[\App\Http\Controllers\PillarController::class,'show']);
 
-route::get('/news',function()
-{
-    return view('news');
-})->name('news');
+route::get('/news',[\App\Http\Controllers\NewsController::class,'index'])->name('news.all');
+route::get('/news/{news}',[\App\Http\Controllers\NewsController::class,'show'])->name('news.show');
 
 
 
