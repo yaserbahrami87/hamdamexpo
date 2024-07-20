@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '73c6fec8304a262ed2edffc22d43f110d511b240',
+        'reference' => '30f2bb08f42dd75f99ddf9b4e072bfc44a643473',
         'name' => 'laravel/laravel',
         'dev' => true,
     ),
@@ -247,6 +247,24 @@
             'reference' => '8c3d0a3f6af734494ad8f6fbbee0ba92422859f3',
             'dev_requirement' => true,
         ),
+        'hekmatinasser/notowo' => array(
+            'pretty_version' => 'v1.0.1',
+            'version' => '1.0.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../hekmatinasser/notowo',
+            'aliases' => array(),
+            'reference' => 'c51ad5dcedac966dd93ce558ac7e6a84e0020d6d',
+            'dev_requirement' => false,
+        ),
+        'hekmatinasser/verta' => array(
+            'pretty_version' => 'v2.1.1',
+            'version' => '2.1.1.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../hekmatinasser/verta',
+            'aliases' => array(),
+            'reference' => '8659810fce313f49fd4f665ca9fb05a371aa6da7',
+            'dev_requirement' => false,
+        ),
         'illuminate/auth' => array(
             'dev_requirement' => false,
             'replaced' => array(
@@ -481,7 +499,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '73c6fec8304a262ed2edffc22d43f110d511b240',
+            'reference' => '30f2bb08f42dd75f99ddf9b4e072bfc44a643473',
             'dev_requirement' => false,
         ),
         'laravel/sail' => array(

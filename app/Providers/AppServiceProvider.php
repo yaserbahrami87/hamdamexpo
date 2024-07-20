@@ -29,7 +29,10 @@ class AppServiceProvider extends ServiceProvider
         $festival=festival::latest()
                             ->first();
         $settings=Setting::get();
+        $festivals=festival::orderby('id','desc')
+            ->get();
         View::share('festival',$festival);
+        View::share('festivals',$festivals);
         View::share('settings',$settings);
     }
 }

@@ -57,4 +57,9 @@ class User extends Authenticatable
             return true;
         }
     }
+
+    public  function competitions()
+    {
+        return $this->hasMany(Competition::class);
+    }
 }

@@ -2,6 +2,17 @@
 
 Route::get('/',[\App\Http\Controllers\Admin\AdminController::class,'index']);
 
+//Users
+Route::post('/user/{user}/login',[\App\Http\Controllers\Admin\UserController::class,'loginWithUser'])->name('user.login');
+Route::get('/user',[\App\Http\Controllers\Admin\UserController::class,'index'])->name('users');
+Route::get('/user/{user}',[\App\Http\Controllers\Admin\UserController::class,'show'])->name('user.show');
+
+//News
+Route::get('/news',[\App\Http\Controllers\Admin\NewsController::class,'index'])->name('news');
+Route::post('/news',[\App\Http\Controllers\Admin\NewsController::class,'store'])->name('news.store');
+Route::get('/news/create',[\App\Http\Controllers\Admin\NewsController::class,'create'])->name('news.create');
+
+
 //festivals
 Route::prefix('festival')->group(function()
 {

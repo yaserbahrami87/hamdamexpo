@@ -79,7 +79,47 @@
                             </li>
                         </ul>
                     </li>
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fa fa-users"></i>
+                            <p>
+                                کاربرها
+                                <i class="right fa fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{route('admin.users')}}" class="nav-link ">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>همه کاربرها</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-treeview">
+                        <a href="#" class="nav-link">
+                            <i class="nav-icon fa fa-newspaper-o"></i>
+                            <p>
+                                اخبار
+                                <i class="fa fa-angle-left right"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{route('admin.news')}}" class="nav-link">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>همه اخبار</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{route('admin.news.create')}}" class="nav-link">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>درج خبر</p>
+                                </a>
+                            </li>
 
+                        </ul>
+                    </li>
                     <li class="nav-item has-treeview">
                         <a href="#" class="nav-link">
                             <i class="nav-icon fa fa-wrench"></i>

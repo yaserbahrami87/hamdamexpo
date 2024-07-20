@@ -1,10 +1,10 @@
-@extends('admin.master.index')
+@component('admin.master.index')
 
-@section('headerScript')
+@slot('headerScript')
     <link href="/admin/plugins/datatables/datatables.min.css" rel="stylesheet" />
-@endsection
+@endslot
 
-@section('content')
+
     <div class="col-12">
         <div class="card">
             <div class="card-header">
@@ -50,7 +50,7 @@
                             <td>{{$colleague->option}}</td>
                             <td>
                                 <a href="/admin/setting/colleagues/{{$colleague->id}}/edit" class="btn btn-warning">
-                                    <i class="bi bi-pencil-square"></i>
+                                    <i class="material-icons">edit</i>
                                 </a>
                             </td>
                             <td>
@@ -58,7 +58,7 @@
                                     {{method_field('DELETE')}}
                                     {{csrf_field()}}
                                     <button class="btn btn-danger" type="submit">
-                                        <i class="bi bi-trash-fill"></i>
+                                        <i class="material-icons">delete</i>
                                     </button>
                                 </form>
                             </td>
@@ -77,9 +77,9 @@
     <div class="col-12 table-responsive">
 
     </div>
-@endsection
 
-@section('footerScript')
+
+@slot('footerScript')
     <script src="/admin/plugins/datatables/datatables.min.js"></script>
 
     <script>
@@ -101,4 +101,5 @@
             });
         });
     </script>
-@endsection
+@endslot
+@endcomponent
