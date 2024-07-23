@@ -98,7 +98,7 @@
                             </li>
                         @endif
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="/panel/competiton/create">ارسال اثر</a>
+                            <a class="nav-link text-dark" href="/panel/competition">ارسال اثر</a>
                         </li>
 
 
