@@ -40,6 +40,9 @@ route::get('/news',[\App\Http\Controllers\NewsController::class,'index'])->name(
 route::get('/news/{news}',[\App\Http\Controllers\NewsController::class,'show'])->name('news.show');
 
 
+//contact US
+Route::get('/contactUs/create',[\App\Http\Controllers\ContactUsController::class,'create']);
+Route::post('/contactUs',[\App\Http\Controllers\ContactUsController::class,'store']);
 
 
 
