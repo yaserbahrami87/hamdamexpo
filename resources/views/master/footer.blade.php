@@ -30,9 +30,7 @@
                 <img src="/images/hamdam_store.png" width="100px"  />
             </a>
 
-            <a href="#" target="_blank">
-                <img src="/images/دانشگاه-هنر-طلایی.png" width="100px" />
-            </a>
+
         </div>
 
 

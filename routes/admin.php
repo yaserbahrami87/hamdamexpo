@@ -1,6 +1,6 @@
 <?php
 
-Route::get('/',[\App\Http\Controllers\Admin\AdminController::class,'index']);
+Route::get('/',[\App\Http\Controllers\Admin\AdminController::class,'index'])->name('home');
 
 //Users
 Route::post('/user/{user}/login',[\App\Http\Controllers\Admin\UserController::class,'loginWithUser'])->name('user.login');

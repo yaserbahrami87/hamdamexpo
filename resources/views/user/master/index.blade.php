@@ -8,17 +8,17 @@
   <title>پنل مدیریت | داشبورد دوم</title>
 
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="/admin/plugins/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/dashboard/plugins/font-awesome/css/font-awesome.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="/admin/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="/dashboard/dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
 
     <!-- bootstrap rtl -->
-  <link rel="stylesheet" href="/admin/dist/css/bootstrap-rtl.min.css">
+  <link rel="stylesheet" href="/dashboard/dist/css/bootstrap-rtl.min.css">
   <!-- template rtl version -->
-  <link rel="stylesheet" href="/admin/dist/css/custom-style.css">
+  <link rel="stylesheet" href="/dashboard/dist/css/custom-style.css">
     @livewireStyles
 
 </head>
@@ -36,12 +36,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">داشبورد دوم</h1>
+            <h1 class="m-0 text-dark">داشبورد </h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-left">
-              <li class="breadcrumb-item"><a href="#">خانه</a></li>
-              <li class="breadcrumb-item active">داشبورد دوم</li>
+              <li class="breadcrumb-item"><a href="/panel">خانه</a></li>
+
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -88,28 +88,28 @@
 
 <!-- REQUIRED SCRIPTS -->
 <!-- jQuery -->
-<script src="/admin/plugins/jquery/jquery.min.js"></script>
+<script src="/dashboard/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap -->
-<script src="/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/dashboard/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
-<script src="/admin/dist/js/adminlte.js"></script>
+<script src="/dashboard/dist/js/adminlte.js"></script>
 
 <!-- OPTIONAL SCRIPTS -->
-<script src="/admin/dist/js/demo.js"></script>
+<script src="/dashboard/dist/js/demo.js"></script>
 
 <!-- PAGE PLUGINS -->
 <!-- SparkLine -->
-<script src="/admin/plugins/sparkline/jquery.sparkline.min.js"></script>
+<script src="/dashboard/plugins/sparkline/jquery.sparkline.min.js"></script>
 <!-- jVectorMap -->
-<script src="/admin/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="/admin/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="/dashboard/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="/dashboard/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
 <!-- SlimScroll 1.3.0 -->
-<script src="/admin/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="/dashboard/plugins/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- ChartJS 1.0.2 -->
-<script src="/admin/plugins/chartjs-old/Chart.min.js"></script>
+<script src="/dashboard/plugins/chartjs-old/Chart.min.js"></script>
 
 <!-- PAGE SCRIPTS -->
-<script src="/admin/dist/js/pages/dashboard2.js"></script>
+<script src="/dashboard/dist/js/pages/dashboard2.js"></script>
 @livewireScripts
 </body>
 </html>
