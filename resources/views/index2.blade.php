@@ -259,11 +259,11 @@
                             <div class="carousel-item @if($loop->iteration==1) active @endif">
                                 @if(strrchr($slider->value,'.')!='.mp4')
                                     <a href="{{$slider->option}}">
-                                        <img src="/assets/images/{{$slider->value}}" class="d-block w-100" alt="...">
+                                        <img src="/images/{{$slider->value}}" class="d-block w-100" alt="...">
                                     </a>
                                 @else
                                     <video controls width="100%">
-                                        <source src="/assets/images/{{$slider->value}}">
+                                        <source src="/images/{{$slider->value}}">
                                     </video>
                                 @endif
                             </div>
