@@ -1,5 +1,5 @@
-@extends('admin.master.index')
-@section('content')
+@component('admin.master.index')
+
     <div class="col-12">
         <div class="card">
             <div class="card-header">
@@ -26,4 +26,4 @@
             </div>
         </div>
     </div>
-@endsection
+@endcomponent
