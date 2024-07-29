@@ -11,4 +11,9 @@ class Competition extends Model
     protected $fillable=[
         'festival_id','user_id','name','description','image','status'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

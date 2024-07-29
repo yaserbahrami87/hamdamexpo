@@ -35,7 +35,8 @@ Route::prefix('pillar')->group(function()
     Route::delete('/{pillar}',[\App\Http\Controllers\Admin\PillarController::class,'destroy'])->name('pillar.delete');
 });
 
-
+//Competiton
+Route::get('/competition/{competition}',[\App\Http\Controllers\Admin\CompetitionController::class,'show']);
 
 
 //Settings

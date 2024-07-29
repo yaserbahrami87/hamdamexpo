@@ -13,24 +13,19 @@
         <div class="card-body">
             <div class="row">
                 @foreach($user->competitions->where('festival_id','=',$festival->id) as $competition)
+
                     <div class="col-12 col-md-3">
 
                         <div class="card" >
-                            <img src="/images/competition/{{$competition->image}}" class="card-img-top" alt="..." height="160px">
+                            <img src="/competition/{{$festival->id}}/{{$competition->image}}" class="card-img-top" alt="..." height="160px">
                             <div class="card-body">
-                                <p > نام مکان: <b class="card-title">{{$competition->name_place}}</b></p>
-
-                                <p>آدرس: <b class="card-text">{{$competition->location}}</b></p>
-
                                 <p>توضیحات: <b class="card-text">{{$competition->description}}</b></p>
 
                             </div>
                             <div class="card-footer">
-                                <a href="/admin/competiton/{{$competition->id}}" class="btn btn-primary btn-sm   " target="_blank">
+                                <a href="/competition/{{$competition->festival_id}}/{{$competition->image}}" class="btn btn-primary btn-sm   " target="_blank">
                                     مشاهده
                                 </a>
-
-                                <span class="float-left">{{($competition->competition_category->category_fa)}}</span>
                             </div>
                         </div>
 
