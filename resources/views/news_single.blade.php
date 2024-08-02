@@ -14,8 +14,8 @@
             </div>
             <div class="col-12  mb-5 " id="news">
                 <div class="card p-5" id="news_single">
-                    <h1 class="text-center">{{$news->title_fa}}</h1>
-                    {!! $news->content_fa !!}
+                    <h1 class="text-center">{{$news->title}}</h1>
+                    {!! $news->content !!}
                 </div>
             </div>
         </div>
