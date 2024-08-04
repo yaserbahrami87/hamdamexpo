@@ -138,6 +138,25 @@ class CompetitionController extends Controller
      */
     public function destroy(Competition $competition)
     {
-        //
+        if($competition->user_id==Auth::user()->id)
+        {
+            $festival=festival::latest()->first();
+            File::delete(public_path('competition/'.$festival->id."/".$competition->image));
+            $status=$competition->delete();
+            if($status)
+            {
+                alert()->success('با موفقیت حذف شد')->persistent('بستن');
+            }
+            else
+            {
+                alert()->error('خطا در حذف عکس')->persistent('بستن');
+            }
+            return back();
+        }
+        else
+        {
+            alert()->warning('شما دسترسی به این فایل ندارید')->persistent('بستن');
+            return back();
+        }
     }
 }

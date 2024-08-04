@@ -54,6 +54,13 @@
                         <a href="{{route('panel.competition.edit',['competition'=>$item->id])}}" class="btn btn-warning btn-sm">
                             <i class="material-icons">edit</i>
                         </a>
+                        <form class="d-inline" method="post" action="{{route('panel.competition.delete',['competition'=>$item->id])}}" onsubmit="return window.confirm('آیا از حذف اطمینان دارید؟')">
+                            {{csrf_field()}}
+                            {{method_field('DELETE')}}
+                            <button type="submit" class="btn btn-danger btn-sm">
+                                <i class="material-icons">delete</i>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>

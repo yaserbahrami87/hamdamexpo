@@ -19,10 +19,12 @@
   <link rel="stylesheet" href="/dashboard/dist/css/bootstrap-rtl.min.css">
   <!-- template rtl version -->
   <link rel="stylesheet" href="/dashboard/dist/css/custom-style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     @livewireStyles
 
 </head>
 <body class="hold-transition sidebar-mini">
+@include('sweet::alert')
 <div class="wrapper">
     @include('user.master.topbar')
 
