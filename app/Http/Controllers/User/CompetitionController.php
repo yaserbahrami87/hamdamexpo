@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Competition;
 use App\Models\festival;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
@@ -116,6 +117,8 @@ class CompetitionController extends Controller
                     $request->image=$image;
                     $competition->image=$image;
                     $competition->save();
+                    Artisan::call('cache:clear');
+                    Artisan::call('view:clear');
                 }
 
                 alert()->success('بروزرسانی با موفقیت انجام شد')->persistent('بستن');
