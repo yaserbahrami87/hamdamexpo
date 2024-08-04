@@ -64,8 +64,5 @@ class Competitions extends Component
             'description'   =>$this->description,
             'image'         =>$this->fileName,
         ]);
-
-
-
     }
 }
