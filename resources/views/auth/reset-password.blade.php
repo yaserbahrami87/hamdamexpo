@@ -40,7 +40,7 @@
 
                     <div class="form-group">
                         <label for="password_confirmation">تکرار رمز عبور:</label>
-                        <input type="password_confirmation" class="form-control" id="password_confirmation" name="password_confirmation"  required autocomplete="current-password" />
+                        <input type="password" class="form-control" id="password_confirmation" name="password_confirmation"  required autocomplete="current-password" />
                         @error('password_confirmation')
                         <p class="text-danger" >
                             <strong>{{ $message }}</strong>
