@@ -23,7 +23,7 @@ class Competitions extends Component
     protected function rules()
     {
         return [
-            'name'                      =>'required|string|min:3|max:100',
+            'name'                      =>'nullable|string|min:3|max:100',
             'description'               =>'nullable|string',
             'image'                     =>'required|mimes:jpeg,jpg,pdf,png,bmp|max:3072',
         ];

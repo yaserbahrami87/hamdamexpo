@@ -11,7 +11,7 @@
 
                         <form wire:submit.prevent="save">
                             <div class="form-group">
-                                <label for="name">نام اثر:<span class="text-danger">*</span></label>
+                                <label for="name">نام اثر:</label>
                                 <input type="text" class="form-control" id="name" wire:model.lazy="name" >
                                 @error('name')
                                 <span class="text-danger">
