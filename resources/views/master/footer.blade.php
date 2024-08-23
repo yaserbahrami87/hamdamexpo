@@ -4,21 +4,29 @@
     </div>
     <div class="row pt-4  mb-3">
 
-        <div class="col-md-8">
+        <div class="col-md-4">
             <b class="d-block">ارتباط با ما</b>
 
             <p class="m-0 text-justify">{{$settings->where('setting','address')->first()->value}}</p>
             <a href="tel:{{$settings->where('setting','tel')->first()->value}}" class="mr-3">{{$settings->where('setting','tel')->first()->value}}</a>
             <a href="mailto:{{$settings->where('setting','email')->first()->value}}" class="d-block">{{$settings->where('setting','email')->first()->value}}</a>
         </div>
-        <!--
+
         <div class="col-md-3 align-items-center text-center p-0 d-flex justify-content-around">
+            <!--
             <a href="#" target="_blank" class="d-inline-block social" id="facebook_footer"></a>
             <a href="#" target="_blank" class="d-inline-block social" id="telegram_footer"></a>
             <a href="#" target="_blank" class="d-inline-block social" id="insta_footer"></a>
             <a href="#" target="_blank" class="d-inline-block social" id="whatsapp_footer"></a>
+            -->
+            <a href="https://orsachap.ir/" target="_blank">
+                <img src="/images/orsa1.png" width="100px" />
+            </a>
+            <a href="#" target="_blank">
+                <img src="/images/kardan.png" width="100px" />
+            </a>
         </div>
-        -->
+
         <div class="col-md-4 text-center">
 
 
