@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Setting;
+use Faker\Core\File;
 use Illuminate\Http\Request;
 use Intervention\Image\Facades\Image;
 
